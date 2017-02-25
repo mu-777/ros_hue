@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+    <param name="hue_ip" type="str" value="192.168.1.xxx"/>
+    <param name="hue_id" type="str" value="xxxxxxxxxxxxxxx"/>
+    <param name="hue_username" type="str" value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
+
+    <rosparam param="hue_light_ids">
+        [2, 3]
+    </rosparam>
+
+    <node name="ros_hue" pkg="ros_hue" type="ros_hue_controller.py" output="screen">
+        <param name="on_srv" type="str" value="hue_on_service"/>
+        <param name="off_srv" type="str" value="hue_off_service"/>
+        <param name="toggle_srv" type="str" value="hue_toggle_service"/>
+        <param name="init_srv" type="str" value="hue_init_service"/>
+    </node>
+</launch>
