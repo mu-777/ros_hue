@@ -1,0 +1,18 @@
+int16[] ids
+
+# is_group is true if you send a command to the group, not ids
+bool is_group
+string group_name
+
+# is_scene is true if you send a hsv command
+bool is_hsv
+int16 bri
+int16 hue
+int16 sat
+
+# is_scene is true if you send a scene command
+bool is_scene
+string scene_name
+---
+bool success
+string message

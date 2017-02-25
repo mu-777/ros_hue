@@ -58,7 +58,7 @@ find_package(catkin REQUIRED
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
-  IDsTrigger.srv
+  HueTrigger.srv
 )
 
 ## Generate actions in the 'action' folder
